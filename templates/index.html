@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Success Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🎬 Movie Success Prediction</h2>
+
+<label>Title</label>
+<input type="text" id="title" list="titles-list" placeholder="Enter movie title">
+<datalist id="titles-list"></datalist>
+
+<label>Director</label>
+<input type="text" id="director" list="directors-list" placeholder="Enter director name">
+<datalist id="directors-list"></datalist>
+
+
+    <label>Runtime (Minutes)</label>
+    <input type="number" id="runtime" value="120">
+
+    <label>Rating</label>
+    <input type="number" step="0.1" id="rating" value="7.5">
+
+    <label>Revenue (Millions)</label>
+    <input type="number" id="revenue" value="150">
+
+<div class="genre">
+    <label><input type="checkbox" id="action"> Action</label>
+    <label><input type="checkbox" id="adventure"> Adventure</label>
+    <label><input type="checkbox" id="comedy"> Comedy</label>
+    <label><input type="checkbox" id="family"> Family</label>
+    <label><input type="checkbox" id="horror"> Horror</label>
+    <label><input type="checkbox" id="sport"> Sport</label>
+</div>
+
+
+    <button onclick="predict()">Predict</button>
+
+    <h3 id="result"></h3>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
